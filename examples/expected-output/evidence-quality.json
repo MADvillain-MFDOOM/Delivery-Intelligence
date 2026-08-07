@@ -1,0 +1,34 @@
+{
+  "forecast_ready_items": 6,
+  "records_needing_correction": 6,
+  "impacted_delivery_items": 6,
+  "excluded_points": 5,
+  "unestimated_items": [
+    "DEMO-104",
+    "DEMO-107",
+    "DEMO-113"
+  ],
+  "hierarchy_violations": [
+    "DEMO-106",
+    "DEMO-112",
+    "DEMO-113"
+  ],
+  "ownership_violations": [
+    "DEMO-109",
+    "DEMO-113"
+  ],
+  "excluded_items": [
+    "DEMO-110"
+  ],
+  "violations": [
+    {"issue_key": "DEMO-104", "problem_type": "missing_estimate", "reason": "Story requires a numeric estimate."},
+    {"issue_key": "DEMO-106", "problem_type": "invalid_hierarchy", "reason": "Story requires a valid Epic parent."},
+    {"issue_key": "DEMO-107", "problem_type": "missing_estimate", "reason": "Story requires a numeric estimate."},
+    {"issue_key": "DEMO-109", "problem_type": "missing_team", "reason": "Delivery item has no team ownership."},
+    {"issue_key": "DEMO-110", "problem_type": "excluded", "reason": "Item is excluded from forecast-ready scope."},
+    {"issue_key": "DEMO-112", "problem_type": "invalid_hierarchy", "reason": "Epic requires a valid Initiative parent."},
+    {"issue_key": "DEMO-113", "problem_type": "missing_estimate", "reason": "Story requires a numeric estimate."},
+    {"issue_key": "DEMO-113", "problem_type": "invalid_hierarchy", "reason": "Story requires a valid Epic parent."},
+    {"issue_key": "DEMO-113", "problem_type": "missing_team", "reason": "Delivery item has no team ownership."}
+  ]
+}

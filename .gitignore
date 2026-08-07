@@ -28,6 +28,7 @@ exports/
 output/
 reports/private/
 *.csv
+!examples/synthetic-data/*.csv
 *.xlsx
 *.xls
 *.jsonl

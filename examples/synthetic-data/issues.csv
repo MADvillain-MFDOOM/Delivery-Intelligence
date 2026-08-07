@@ -1,0 +1,15 @@
+issue_key,issue_type,summary,parent_key,status,story_points,assignee,team,sprint,created_date,updated_date,resolution_date,blocked,excluded
+DEMO-101,Initiative,Improve customer delivery flow,,Done,,developer-1,team-alpha,,2026-01-05,2026-02-20,2026-02-20,false,false
+DEMO-102,Epic,Reduce delivery friction,DEMO-101,Done,,developer-1,team-alpha,Sprint-Alpha,2026-01-06,2026-02-20,2026-02-20,false,false
+DEMO-103,Story,Define delivery intake,DEMO-102,Done,3,developer-1,team-alpha,Sprint-Alpha,2026-01-07,2026-01-16,2026-01-16,false,false
+DEMO-104,Story,Document evidence rules,DEMO-102,Done,,developer-2,team-alpha,Sprint-Alpha,2026-01-08,2026-01-20,2026-01-20,false,false
+DEMO-105,Bug,Correct date handling,DEMO-102,In Progress,2,developer-2,team-beta,Sprint-Beta,2026-01-12,2026-02-10,,true,false
+DEMO-106,Story,Add hierarchy validation,,In Progress,5,developer-1,team-beta,Sprint-Beta,2026-01-13,2026-02-10,,false,false
+DEMO-107,Story,Clarify ownership labels,DEMO-102,To Do,,developer-2,team-beta,,2026-01-14,2026-02-01,,false,false
+DEMO-108,Story,Trace delivery dependencies,DEMO-102,Done,1,developer-1,team-alpha,Sprint-Gamma,2026-01-10,2026-02-27,2026-02-27,true,false
+DEMO-109,Bug,Repair stale status mapping,DEMO-102,Done,3,developer-2,,Sprint-Gamma,2026-01-15,2026-02-27,2026-02-27,false,false
+DEMO-110,Story,Retired example scope,DEMO-102,Cancelled,5,developer-1,team-alpha,Sprint-Alpha,2026-01-09,2026-01-18,,false,true
+DEMO-111,Story,Carry over test automation,DEMO-102,In Progress,8,developer-1,team-alpha,Sprint-Beta,2026-01-20,2026-02-27,,false,false
+DEMO-112,Epic,Unlinked reporting stream,,In Progress,,developer-2,team-beta,Sprint-Gamma,2026-02-01,2026-02-27,,false,false
+DEMO-113,Story,Repair incomplete work record,,To Do,,developer-2,,Sprint-Gamma,2026-02-05,2026-02-27,,false,false
+DEMO-114,Bug,Add lightweight audit note,DEMO-102,To Do,1.5,developer-2,team-beta,,2026-02-12,2026-02-27,,false,false

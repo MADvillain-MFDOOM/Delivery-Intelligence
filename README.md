@@ -43,7 +43,28 @@ The planned system is modular: acquisition obtains Jira records, normalisation m
 
 ## Current maturity/status
 
-Initial public scaffold. Documentation and boundaries are established; substantive acquisition, analysis, forecasting, and reporting algorithms are not implemented yet.
+The first implementation slice is available: synthetic Jira data can be loaded and normalised, evidence quality can be validated, and delivery items can be classified for forecast readiness. Forecasting algorithms, dashboards, and live Jira acquisition are not implemented yet.
+
+### Evidence Quality / Forecast Readiness
+
+The public example follows this flow:
+
+```text
+Synthetic Jira data
+  → load and normalise
+  → validate evidence quality
+  → classify forecast readiness
+  → expose invalid scope
+  → generate decision-ready output
+```
+
+Run the console example from the repository root with:
+
+```bash
+python3 -m src.reporting.console
+```
+
+The result is also captured as a behavioural contract in `examples/expected-output/evidence-quality.json`.
 
 ## Safety and data handling
 

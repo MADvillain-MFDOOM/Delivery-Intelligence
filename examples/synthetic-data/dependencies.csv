@@ -1,0 +1,4 @@
+source_issue,target_issue,dependency_type
+DEMO-105,DEMO-108,blocks
+DEMO-106,DEMO-111,depends_on
+DEMO-109,DEMO-114,depends_on

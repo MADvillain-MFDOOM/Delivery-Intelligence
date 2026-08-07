@@ -1,0 +1,15 @@
+issue_key,from_status,to_status,transition_date
+DEMO-103,To Do,In Progress,2026-01-08
+DEMO-103,In Progress,Done,2026-01-16
+DEMO-104,To Do,In Progress,2026-01-10
+DEMO-104,In Progress,Done,2026-01-20
+DEMO-105,To Do,In Progress,2026-01-15
+DEMO-106,To Do,In Progress,2026-01-18
+DEMO-108,To Do,Blocked,2026-02-02
+DEMO-108,Blocked,Done,2026-02-27
+DEMO-109,To Do,In Progress,2026-01-20
+DEMO-109,In Progress,Done,2026-02-27
+DEMO-110,To Do,Cancelled,2026-01-18
+DEMO-111,To Do,In Progress,2026-01-25
+DEMO-112,To Do,In Progress,2026-02-05
+DEMO-114,To Do,In Progress,2026-02-18

@@ -8,25 +8,36 @@ jira:
   projects:
     - PROJECT_PLACEHOLDER
   issue_types:
-    - DeliveryItem
-    - Subtask
-  statuses:
-    todo: [To Do]
-    in_progress: [In Progress]
-    done: [Done]
+    initiative: Initiative
+    epic: Epic
+    story: Story
+    bug: Bug
 
 hierarchy:
-  parent_field: parent
-  levels:
-    - initiative
-    - delivery_item
-    - subtask
+  Initiative:
+    - Epic
+  Epic:
+    - Story
+    - Bug
 
-governance:
-  completion_statuses: [Done]
-  excluded_statuses: [Cancelled]
-  require_estimate_for_forecast: true
-  require_start_and_completion_dates: true
+delivery:
+  estimated_issue_types:
+    - Story
+    - Bug
+  completed_statuses:
+    - Done
+  excluded_statuses:
+    - Cancelled
+
+forecast_readiness:
+  require_estimate:
+    - Story
+    - Bug
+  require_parent:
+    - Epic
+    - Story
+    - Bug
+  require_team: true
 
 analysis:
   timezone: UTC
