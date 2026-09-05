@@ -43,3 +43,11 @@ analysis:
   timezone: UTC
   reporting_period: week
   estimation_unit: generic_units
+
+forecasting:
+  history_sprints: 8
+  minimum_history_observations: 3
+  scenario_percentiles:
+    conservative: 25
+    expected: 50
+    optimistic: 75

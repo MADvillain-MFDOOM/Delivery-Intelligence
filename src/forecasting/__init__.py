@@ -1,4 +1,4 @@
-"""Forecasting package for evidence-gated delivery scenarios."""
+"""Forecasting package public interface."""
 
 from .scenario import build_delivery_forecast
 

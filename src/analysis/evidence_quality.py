@@ -114,6 +114,7 @@ def evaluate_forecast_readiness(issues: list[dict[str, Any]], rules: dict[str, A
     )
 
     return {
+        "forecast_ready_item_keys": ready_items,
         "forecast_ready_items": len(ready_items),
         "records_needing_correction": len(non_excluded_violation_keys),
         "impacted_delivery_items": len(non_excluded_violation_keys),

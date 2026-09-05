@@ -43,7 +43,7 @@ The planned system is modular: acquisition obtains Jira records, normalisation m
 
 ## Current maturity/status
 
-The first implementation slice is available: synthetic Jira data can be loaded and normalised, evidence quality can be validated, and delivery items can be classified for forecast readiness. Forecasting algorithms, dashboards, and live Jira acquisition are not implemented yet.
+Synthetic Jira data can be loaded and normalised, evidence quality can be validated, and delivery items can be classified for forecast readiness. The first forecasting algorithm is also available: it generates evidence-gated delivery scenarios from historical completed points. Dashboards and live Jira acquisition are not implemented yet.
 
 ### Evidence Quality / Forecast Readiness
 
@@ -66,6 +66,22 @@ python3 -m src.reporting.console
 
 The result is also captured as a behavioural contract in `examples/expected-output/evidence-quality.json`.
 
+### Delivery Forecasting
+
+Generate a concise scenario report with:
+
+```bash
+python3 -m src.reporting.forecast_console
+```
+
+Emit the complete `DeliveryForecast.v1` JSON contract with:
+
+```bash
+python3 -m src.reporting.forecast_console --json
+```
+
+The forecast uses configured historical throughput percentiles. It assigns completed work to the sprint window containing its resolution date, forecasts only evidence-ready estimated item types, exposes invalid scope, and reports insufficient history rather than overstating confidence.
+
 ## Safety and data handling
 
 Never commit credentials, tokens, private URLs, production exports, or identifiable company, customer, or employee information. Use synthetic or fully anonymised data in examples and issues. Review [SECURITY.md](SECURITY.md) before contributing.
@@ -80,6 +96,6 @@ Setup and runnable examples will be documented when the first reusable implement
 - Normalised delivery-item and hierarchy representations.
 - Evidence-quality checks and visible exclusion reasons.
 - Flow, aging, WIP, capacity, spillover, and dependency analysis.
-- Forecast readiness checks, scenario-based forecasting, and diagnostics.
+- Additional forecasting methods, calibration, and diagnostics.
 - Decision-ready reports with traceable inputs and caveats.
 - Tests and synthetic fixtures that can run without private systems.

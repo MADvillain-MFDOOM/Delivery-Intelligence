@@ -1,4 +1,12 @@
 {
+  "forecast_ready_item_keys": [
+    "DEMO-102",
+    "DEMO-103",
+    "DEMO-105",
+    "DEMO-108",
+    "DEMO-111",
+    "DEMO-114"
+  ],
   "forecast_ready_items": 6,
   "records_needing_correction": 6,
   "impacted_delivery_items": 6,
